@@ -122,39 +122,4 @@ body {
     text-decoration: underline;
   }
   
-  /* Styles for main page vision and mission */
-  .vision-box,
-  .mission-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
   
-  .vision-box h2,
-  .mission-box h2 {
-    font-size: 24px;
-    color: #007bff;
-    margin-bottom: 10px;
-  }
-  
-  .vision-box p,
-  .mission-box p {
-    font-size: 16px;
-    color: #555;
-  }
-  /* CSS for the feedback link */
-.feedback-link {
-  background-color: #007bff;
-  color: #fff;
-  padding: 15px 30px;
-  font-size: 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.feedback-link:hover {
-  background-color: #0056b3;
-}

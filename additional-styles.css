@@ -50,7 +50,7 @@ nav ul li a:hover {
   background-color: #28a745;
   color: #fff;
   border: none;
-  padding: 12px 20px;
+  padding: 1px 2px;
   font-size: 16px;
   border-radius: 5px;
   text-decoration: none;
@@ -226,4 +226,17 @@ nav ul li a:hover {
 
 #feedback button:hover {
   background-color: #0056b3;
+}
+/* Default styles for all screen sizes */
+body {
+  /* Your default styles here */
+}
+
+/* Media query for screens smaller than or equal to 768px (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+  /* Styles specific to smaller screens */
+  body {
+      /* Adjustments for smaller screens */
+      font-size: 16px; /* Example adjustment */
+  }
 }
