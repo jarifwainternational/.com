@@ -1,0 +1,229 @@
+/* CSS for the header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* CSS for the title */
+header h1 {
+  margin: 0; /* Remove default margin */
+}
+
+/* CSS for the navigation bar */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for the signup button */
+.signup-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #218838;
+}
+
+/* Styles for Vision section */
+#vision {
+  background-image: url('https://i.pinimg.com/564x/26/e0/a2/26e0a271d6a39cfde8d15c9ef0c22b49.jpg');
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background */
+  padding: 100px 50;
+  text-align: center; /* Center text */
+}
+
+#vision h2,
+#vision p {
+  color: black; /* Text color */
+}
+
+/* Styles for Mission section */
+#mission {
+  background-image: url('https://i.pinimg.com/564x/26/e0/a2/26e0a271d6a39cfde8d15c9ef0c22b49.jpg');
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background */
+  padding: 100px 50;
+  text-align: center; /* Center text */
+}
+
+
+#mission h2,
+#mission p {
+  color: black; /* Text color */
+}
+
+
+
+/* Styles for flags section */
+#flags {
+  background-image: url('https://i.pinimg.com/564x/d9/c9/df/d9c9dffc7d25b858d9bb9b94ee970030.jpg');
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flag {
+  text-align: center;
+  margin: 20px;
+}
+
+.flag img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.flag {
+  text-align: center;
+  margin: 20px;
+  position: relative; /* Required for positioning the tooltip */
+}
+
+.flag img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.flag .tooltip {
+  position: absolute;
+  bottom: -20px; /* Adjust vertical position of the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  opacity: 0; /* Hide tooltip by default */
+  transition: opacity 0.3s ease;
+}
+
+.flag:hover .tooltip {
+  opacity: 1; /* Show tooltip on hover */
+}
+.flag {
+  position: relative;
+}
+
+.flag img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.flag .tooltip {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px; /* Adjust the width as needed */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Ensure tooltip is above the image */
+  text-align: center; /* Center the text */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.flag:hover .tooltip {
+  opacity: 1;
+}
+
+/* CSS for the feedback section */
+#feedback {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#feedback .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#feedback h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#feedback p {
+  font-size: 18px;
+  position: relative;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#feedback .feedback-btn {
+  position: inherit;
+
+  margin-top: 50px 100;
+}
+
+#feedback button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#feedback button:hover {
+  background-color: #0056b3;
+}

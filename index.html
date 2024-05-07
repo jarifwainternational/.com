@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarifwa international teachers placement agency</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="additional-styles.css">
+  <style>
+    .profile-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+    }
+    .round-button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #007bff;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jarifwa international teachers placement agency</h1>
+      <nav>
+        <ul id="navList">
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#flags">Countries</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="form.html" class="apply-btn">Apply</a></li>
+          <li><a href="signup.html" class="signup-btn">Sign Up</a></li> <!-- Sign Up button -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Rest of your HTML content -->
+
+ 
+</body>
+</html>
+
+  <section id="vision">
+    <div class="container">
+      <h2>Vision</h2>
+      <p>Vision:
+        "At our recruitment agency, we envision a world where every individual finds meaningful employment that aligns with their skills, passions, and aspirations. We strive to be the bridge that connects talented individuals with opportunities that not only fulfill their professional goals but also contribute to their personal growth and overall well-being."</p>
+    </div>
+    
+  </section>
+
+  <section id="mission">
+    <div class="container">
+      <h2>Mission</h2>
+      <p>"Our mission is to provide exceptional recruitment services by meticulously matching top-tier talent with leading organizations across diverse industries. We aim to foster long-term relationships built on trust, integrity, and mutual respect with both our clients and candidates. Through innovative strategies, personalized attention, and a commitment to excellence, we endeavor to make a positive impact on the lives of individuals and the success of businesses alike."
+      </p>
+    </div>
+  </section>
+
+  <section id="flags">
+    <div class="container">
+      <h2></h2>
+      <div class="flag">
+        <img src="https://i.pinimg.com/564x/50/f3/9f/50f39febff794741fed9d23e3a489e07.jpg">
+        <div class="tooltip">USA: In the United States, there is a continuous demand for teachers due to the increasing student population and the retirement of experienced educators. With evolving educational standards and the need for specialized instruction, qualified teachers are essential to provide quality education and support the diverse learning needs of students across the country.</div>
+      </div>
+      
+      <div class="flag">
+        <img src="https://i.pinimg.com/564x/cb/a2/68/cba2689bdcef1c2bf3b9007b3229b997.jpg" alt="Description of the image" width="300" height="200">
+
+        <div class="tooltip">China's rapid expansion of the education sector has created a growing need for teachers. With initiatives to improve the quality of education and enhance English language proficiency, there is a significant demand for qualified educators to fill teaching positions in schools, language institutes, and international programs across the country.</div>
+        
+      </div>
+      <div class="flag">
+        <img src="https://i.pinimg.com/564x/cd/ef/af/cdefaffcbcc3f2069e5077672fa27ef4.jpg" alt="Description of the image" width="300" height="200">
+        <div class="tooltip">Australia's commitment to providing quality education for all students has led to opportunities for teachers. With a focus on innovation, critical thinking, and STEM education, there is a demand for skilled educators who can inspire students and contribute to the country's future workforce in diverse fields such as science, technology, engineering, and mathematics.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback">
+    <div class="container">
+      <h2></h2>
+      <p></p>
+      <div class="feedback-btn">
+        <a href="feedback.html" class="feedback-link">Provide Feedback</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or inquiries, feel free to contact us at <a href="mailto:info@teacherrecruitmentagency.com">info@teacherrecruitmentagency.com</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Teacher Recruitment Agency</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var navList = document.getElementById("navList");
+      var isLoggedIn = false; // Assume user is not logged in
+
+      // Check if user is logged in (you might need to adjust this logic)
+      // Example: If user is logged in, set isLoggedIn to true
+      // isLoggedIn = true;
+
+      if (isLoggedIn) {
+        // If user is logged in, remove the sign-up button and add the profile icon
+        var signUpBtn = navList.querySelector(".signup-btn");
+        signUpBtn.parentNode.removeChild(signUpBtn);
+
+        var profileIcon = document.createElement("li");
+        profileIcon.innerHTML = '<a href="profile.html" class="profile-icon">' + getFirstLetter("user@example.com") + '</a>';
+        navList.appendChild(profileIcon);
+      } else {
+        // If user is not logged in, keep the sign-up button
+        // You can customize this further as needed
+      }
+
+      // Function to get the first letter of the email (example)
+      function getFirstLetter(email) {
+        return email.charAt(0).toUpperCase();
+      }
+      
+    document.addEventListener("DOMContentLoaded", function() {
+      var navList = document.getElementById("navList");
+
+      // Create Sign Up button
+      var signUpButton = document.createElement("a");
+      signUpButton.setAttribute("href", "signup.html");
+      signUpButton.setAttribute("class", "round-button");
+      signUpButton.textContent = "Sign Up";
+
+      // Create Log Out button
+      var logoutButton = document.createElement("a");
+      logoutButton.setAttribute("href", "signup.html");
+      logoutButton.setAttribute("class", "round-button");
+      logoutButton.textContent = "Log Out";
+
+      // Create list item to hold buttons
+      var navButtons = document.createElement("li");
+      navButtons.setAttribute("class", "nav-buttons");
+      navButtons.appendChild(signUpButton);
+      navButtons.appendChild(logoutButton);
+
+      // Append the list item with buttons to the navbar
+      navList.appendChild(navButtons);
+    
+    });
+  </script>
+</body>
+</html>

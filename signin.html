@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Recruitment | Sign In</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome Back!</h2>
+    <form id="signinForm">
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+    <p>Don't have an account yet? <a href="signup.html">Sign up</a></p>
+    <p>Explore our website <a href="index.html">here</a>.</p>
+  </div>
+
+  <script>
+    document.getElementById('signinForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // Retrieve saved credentials from localStorage
+      var savedEmail = localStorage.getItem('email');
+      var savedPassword = localStorage.getItem('password');
+      
+      // Validate input credentials
+      var inputEmail = document.getElementById('email').value;
+      var inputPassword = document.getElementById('password').value;
+      if (inputEmail === savedEmail && inputPassword === savedPassword) {
+        // Redirect to main website upon successful sign-in
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid email or password. Please try again.");
+      }
+    });
+  </script>
+</body>
+</html>
