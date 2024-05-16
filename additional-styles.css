@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 /* Styles for vision and mission section */
 #vision-mission {
-  background-image: url('https://i.pinimg.com/564x/44/20/08/442008274f5ae084774658594c433519.jpg');
+  //*background-image: url('https://i.pinimg.com/564x/44/20/08/442008274f5ae084774658594c433519.jpg');*//
   background-size: cover;
   background-position: center;
   padding: 100px 50px;
@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 /* Styles for flags section */
 #flags {
-  background-image: url('https://i.pinimg.com/564x/d9/c9/df/d9c9dffc7d25b858d9bb9b94ee970030.jpg');*/
+  background-image: url('https://i.pinimg.com/564x/d9/c9/df/d9c9dffc7d25b858d9bb9b94ee970030.jpg');
   background-color: #f8f9fa;
   padding: 50px 0;
 }
