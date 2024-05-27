@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 /* Styles for vision and mission section */
 #vision-mission {
-  //*background-image: url('https://i.pinimg.com/564x/44/20/08/442008274f5ae084774658594c433519.jpg');*//
+  /*background-image: url('https://i.pinimg.com/564x/44/20/08/442008274f5ae084774658594c433519.jpg');*/
   background-size: cover;
   background-position: center;
   padding: 100px 50px;
