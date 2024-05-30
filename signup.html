@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up - Jarifwa International Teachers Placement</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    #signup {
+      background-image: url('signup-bg.jpg'); /* Path to your background image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -28,7 +67,7 @@
       <div class="container">
         <h2>Sign Up</h2>
         <p>Sign up for our services to get started on your journey with us.</p>
-        <form action="signup_process.html" method="post">
+        <form id="signupForm">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required><br><br>
           <label for="email">Email:</label>
@@ -45,6 +84,22 @@
       <p>&copy; 2024 Teacher Recruitment Agency</p>
     </div>
   </footer>
-  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Store user details in localStorage
+      localStorage.setItem('name', name);
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
+
+      // Redirect to index.html
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
