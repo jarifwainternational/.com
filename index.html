@@ -11,11 +11,11 @@
     gtag('config', 'G-TGQHZ6NL33');
   </script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jarifwa international teachers placement</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="additional-styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add this line for favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     /* Background images and layout adjustment */
     #vision-mission {
@@ -30,11 +30,13 @@
     }
     #vision-mission .container {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
     }
     #vision-mission .vision,
     #vision-mission .mission {
-      width: 45%; /* Adjust width as needed */
+      width: 100%; /* Adjust width as needed */
+      margin-bottom: 20px;
     }
 
     /* Feedback Section */
@@ -44,26 +46,44 @@
     }
     .feedback-container {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
     .feedback-message {
       background-color: white;
       border-radius: 50px; /* Ensures oval shape */
       padding: 20px;
-      max-width: 70%; /* Adjust width as needed */
+      max-width: 90%; /* Adjust width as needed */
       margin: 20px;
       text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      #vision-mission .container {
+        flex-direction: row;
+      }
+      #vision-mission .vision,
+      #vision-mission .mission {
+        width: 45%;
+      }
+      .feedback-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .feedback-message {
+        max-width: 70%;
+      }
     }
   </style>
   <meta name="google-site-verification" content="fsZVS90QN8__XDQD6Jy-IQtt7fAWOMaRbM8rsjd78nk" />
 </head>
 <body>
-  <header style="background-color: rgb(37, 131, 253);"> <!-- Change navbar background color -->
+  <header style="background-color: rgb(37, 131, 253);">
     <div class="container">
       <nav>
         <ul id="navList">
-          <li class="logo"><a href="#"><img src="logo.png" alt="Logo"></a></li> <!-- Add this line for the logo -->
+          <li class="logo"><a href="#"><img src="logo.png" alt="Logo"></a></li>
           <li><a href="vision.html">Vision</a></li>
           <li><a href="mission.html">Mission</a></li>
           <li><a href="countries.html">Countries</a></li>
@@ -121,6 +141,12 @@
             </div>
           </div>
         </div>
+      </div>
+    </footer>
+  </footer>
+</body>
+</html>
+
       </div>
     </footer>
   </footer>
