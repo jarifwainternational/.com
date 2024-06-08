@@ -1,3 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgb(37, 131, 253);
+    padding: 10px 20px;
+}
+
+#navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#navList li {
+    margin-right: 20px;
+}
+
+#navList li.logo {
+    margin-right: auto;
+}
+
+#navList li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+#navList li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+#navList li.logo img {
+    height: 40px; /* Adjust the size as needed */
+}
+
 /* Common styles for all pages */
 
 /* Container styling */
