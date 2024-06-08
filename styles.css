@@ -1,68 +1,173 @@
-body {
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a, footer {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Header and Navigation */
 header {
     background-color: rgb(37, 131, 253);
     padding: 10px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 #navList {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #navList li {
-    margin-right: 20px;
-}
-
-#navList li.logo {
-    margin-right: auto;
+    margin: 5px 10px;
 }
 
 #navList li a {
     color: white;
-    text-decoration: none;
     padding: 8px 16px;
+    transition: background-color 0.3s;
 }
 
 #navList li a:hover {
-    background-color: #575757;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
 }
 
 #navList li.logo img {
-    height: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust size as needed */
 }
 
-@media (max-width: 768px) {
-    #navList {
-        flex-direction: column;
-        align-items: flex-start;
+/* Main Sections */
+#vision-mission {
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#vision-mission .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vision-mission .vision,
+#vision-mission .mission {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#vision-mission h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#vision-mission p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Feedback Section */
+#feedback {
+    background-color: rgb(23, 83, 247);
+    padding: 50px 20px;
+    color: white;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-message {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .feedback-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    #navList li {
-        margin-right: 0;
-        margin-bottom: 10px;
+    .feedback-message {
+        max-width: 45%;
+        margin: 10px;
     }
 }
 
+@media (min-width: 992px) {
+    #vision-mission .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #vision-mission .vision,
+    #vision-mission .mission {
+        width: 45%;
+    }
+}
 
-.create-account-link,
-.request-password-link {
-  color: #007BFF;
-  text-decoration: none;
+/* Footer */
+footer {
+    background-color: rgb(37, 131, 253);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+}
+
+footer .footer-meta {
+    margin-top: 20px;
+    font-size: 0.8rem;
 }
 
 .create-account-link:hover,
